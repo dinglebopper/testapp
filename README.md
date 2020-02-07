@@ -20,6 +20,7 @@ to use GIT, compile applications, and author/run tests.
 ## Running
 
 * Run `TestApp\bin\Debug\TestApp.exe`
+* Open your browser and navigate to `http://localhost:8080`
 
 ## Testing
 
