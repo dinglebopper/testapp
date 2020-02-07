@@ -1,0 +1,206 @@
+* {
+  margin:0;
+  padding:0;
+  font-weight:normal;
+  font-family:Arial;
+}
+.blink {
+  border-radius:.25em;
+  background:red;
+  color:white;
+  font-size:.75em;
+  padding:0 .25em;
+  display:inline-block;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  transform:rotate(10deg);
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+body, html {
+}
+body {
+  font-size:1.5em;
+}
+article {
+  display:flex;
+  flex-direction:column;
+}
+article > header {
+  border-bottom:1px solid gray;
+  padding:1em;
+  text-align:center;
+  background:#efefef;
+}
+article > header h2 {
+  color:gray;
+}
+article > div {
+  flex-grow:1;
+  display:flex;
+  flex-direction:row;
+}
+section {
+  display:flex;
+  flex-direction:column;
+}
+section:first-child {
+  width:38.3%;
+  flex:none;
+}
+section:last-child {
+  flex-grow:1;
+  overflow-y:auto;
+  background:white;
+  border-left:1px solid gray;
+}
+section > header {
+  text-align:center;
+  background:#333;
+  color:white;
+  padding:1em;
+}
+.protocol {
+  height:100%;
+}
+.protocol ul {
+  list-style-type:none;
+}
+.protocol li {
+  display:flex;
+  flex-direction:column;
+  border-bottom:1px solid gray;
+}
+.protocol label {
+  cursor:pointer;
+  padding:1em;
+}
+.protocol label:hover {
+  background:#efefef;
+}
+.message {
+}
+.message .form {
+  display:flex;
+  flex-direction:column;
+}
+.form div {
+  border-bottom:1px solid gray;
+  display:flex;
+  flex-direction:column;
+}
+.form div:last-child {
+  height:10em;
+}
+.form input {
+  font-size:1em;
+  flex-grow;
+  border:0;
+  padding:1em;
+}
+.form textarea {
+  border:0;
+  flex-grow:1;
+  padding:1em;
+  font-size:1em;
+  font-family:Arial;
+}
+.reasons {
+  display:flex;
+  flex-direction:column;
+}
+.reasons h3 {
+  padding:1em;
+  text-align:center;
+  color:white;
+  background:#228be6;
+}
+.reasons .triplet {
+  display:flex;
+  flex-direction:row;
+}
+.reasons .triplet div {
+  font-size:.75em;
+  font-family:sans;
+  width:33.3333333%;
+  padding:2em;
+}
+.send a {
+  display:block;
+  background:#20c997;
+  text-align:center;
+  padding:1em;
+  text-decoration:none;
+  color:white;
+  cursor:pointer;
+}
+.marketing div {
+  padding:1em;
+}
+.marketing div .guy {
+  float:left;
+  height:15vh;
+  margin-bottom:1em;
+  margin-right:1em;
+}
+.marketing div .wow {
+  float:right;
+  height:15vh;
+  margin-bottom:1em;
+  margin-left:1em;
+}
+.overlay {
+  display:none;
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  background:rgba(0, 0, 0, .75);
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.overlay .dialog {
+  width:50%;
+  height:50%;
+  box-shadow:.25em .25em .25em rgba(0, 0, 0, .2);
+  border-radius:.25em;
+  background:white;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+.overlay .dialog .title {
+  text-align:center;
+  padding:1em;
+  background:#333;
+  color:white;
+}
+.overlay .dialog .info {
+  flex-grow:1;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+}
+.overlay .dialog .button {
+  display:flex;
+  flex-direction:row;
+}
+.overlay .dialog .button a {
+  flex-grow:1;
+  padding:1em;
+  background:#20c997;
+  color:white;
+  text-align:center;
+  text-decoration:none;
+}
